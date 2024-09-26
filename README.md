@@ -1,18 +1,7 @@
-## Getting Started
+## Assignment 3
+Author: Samuel Najera
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+This is a simple command line app for four different metric conversions, feet to meters, inches to centimeters, miles to kilometers, and millimeters to inches.
+It provides the instructions when you initialize the program, all you have to do is enter the number corresponding to the conversion you want to preform and 
+enter the value you want. There is input validation, the first input only takes numbers 1-5 and the value input only takes numbers, other wise it will prompt
+the user to reinput their value.
