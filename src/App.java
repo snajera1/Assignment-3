@@ -18,10 +18,10 @@ public class App {
             switch (choice) {
                 case 1:
                     System.out.println("Please enter the feet value:");
-                    if (scanner.hasNextFloat() == true) {
+                    if (scanner.hasNextFloat() == true) { //Checks if the user input a number, if yes then it preforms the calculation and prints the result
                         float foot = scanner.nextFloat();
                         System.out.println(foot + " feet is equal to " + (foot / 3.28084) + " meters.");
-                    } else{
+                    } else{ //If the user didn't enter a valid number, it prompts the user to input again, drops the invalid input and gives the user another scanner input.
                         System.out.println("Please enter a valid number: ");
                         scanner.next();
                         float foot = scanner.nextFloat();
@@ -30,18 +30,39 @@ public class App {
                     continue;
                 case 2:
                     System.out.println("Please enter the inches value: ");
-                    float inches = scanner.nextFloat();
-                    System.out.println(inches + " inches is equal to " + (inches * 2.54) + " cm.");
+                    if (scanner.hasNextFloat() == true) { //Checks if the user input a number, if yes then it preforms the calculation and prints the result
+                        float inches = scanner.nextFloat();
+                        System.out.println(inches + " inches is equal to " + (inches * 2.54) + " cm.");
+                    } else{ //If the user didn't enter a valid number, it prompts the user to input again, drops the invalid input and gives the user another scanner input.
+                        System.out.println("Please enter a valid number: ");
+                        scanner.next();
+                        float inches = scanner.nextFloat();
+                        System.out.println(inches + " inches is equal to " + (inches * 2.54) + " cm.");
+                    }
                     continue;
                 case 3:
                     System.out.println("Please enter the miles value: ");
-                    float miles = scanner.nextFloat();
-                    System.out.println(miles + " miles is equal to " + (miles * 1.6093445) + " km.");
+                    if (scanner.hasNextFloat() == true) { //Checks if the user input a number, if yes then it preforms the calculation and prints the result
+                        float miles = scanner.nextFloat();
+                        System.out.println(miles + " miles is equal to " + (miles * 1.6093445) + " km.");
+                    } else{ //If the user didn't enter a valid number, it prompts the user to input again, drops the invalid input and gives the user another scanner input.
+                        System.out.println("Please enter a valid number: ");
+                        scanner.next();
+                        float miles = scanner.nextFloat();
+                        System.out.println(miles + " miles is equal to " + (miles * 1.6093445) + " km.");
+                    }
                     continue;
                 case 4:
                     System.out.println("Please enter the MM value: ");
-                    float mm = scanner.nextFloat();
-                    System.out.println(mm + " mm is equal to " + (mm / 25.4) + " inches.");
+                    if (scanner.hasNextFloat() == true) { //Checks if the user input a number, if yes then it preforms the calculation and prints the result
+                        float mm = scanner.nextFloat();
+                        System.out.println(mm + " mm is equal to " + (mm / 25.4) + " inches.");
+                    } else{ //If the user didn't enter a valid number, it prompts the user to input again, drops the invalid input and gives the user another scanner input.
+                        System.out.println("Please enter a valid number: ");
+                        scanner.next();
+                        float mm = scanner.nextFloat();
+                        System.out.println(mm + " mm is equal to " + (mm / 25.4) + " inches.");
+                    }
                     continue;
                 case 5:
                     System.out.println("Goodbye!");
